@@ -5,10 +5,10 @@ throw false
 }
 let pesan = args.join` `
 let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`
-let teks = `*ETIQUETA GENERAL*\n\n❏ ${oi}\n\n❏ *𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰𝚂:*\n`
+let teks = `*CREADO POR wa.me+51955095498*\n\n❏ ${oi}\n\n❏ *𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰𝚂:*\n`
 for (let mem of participants) {
 teks += `┣➥ @${mem.id.split('@')[0]}\n`}
-teks += `*└𝐓𝐨𝐩 𝐆𝐥𝐨𝐛𝐚𝐥 CREADO POR wa.me+51955095498*`
+teks += `*└𝐓𝐨𝐩 𝐆𝐥𝐨𝐛𝐚𝐥*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
